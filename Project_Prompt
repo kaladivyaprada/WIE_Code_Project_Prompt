@@ -1,0 +1,189 @@
+Build a complete FULL-STACK web application called **DietRx Guard – AI-Powered Indian Food–Medicine Interaction Checker**.
+
+The UI MUST EXACTLY match the 6 reference screens below in layout, colors, spacing, animations, and component style:
+
+1. Dish Interaction Analyzer (dark theme)
+2. Menu Upload OCR Page (dark neon theme with glowing green borders)
+3. Interaction Analysis Results Dashboard (dark premium with yellow highlights)
+4. 7-Day Meal Plan Dashboard (dark teal-green theme)
+5. Landing Page (futuristic AI food interaction hero section)
+6. Doctor Dashboard (light HD pastel theme)
+
+Replicate all spacing, typography, card radiuses, iconography, neon glow effects, sidebar navigation, floating popups, and card shadows EXACTLY like the screenshots.
+
+================================================================================
+🎨 GLOBAL UI/UX DESIGN SYSTEM (MUST FOLLOW EXACTLY)
+================================================================================
+Theme 1 → DARK MODE (Main User UI):
+- #0D1117, #0F1625, #121826 background layers
+- Neon green accents: #00FF9D, #00D884
+- Soft muted gray text, #D1D5DB
+- White text for headers
+- Glassmorphism containers (backdrop-blur-xl, translucent panels)
+- Icon-only sidebar with glowing active state
+- Hover effects: neon border glow, scale-up, soft drop shadows
+- Rounded-2xl components everywhere
+- Framer Motion animations: fade-up, slide-in, staggered cards
+- Upload boxes with neon-green glow effects
+
+Theme 2 → LIGHT MODE (Doctor Dashboard):
+- White background
+- Soft pastels, mint green highlights
+- Rounded smooth cards
+- Minimalistic health-tech feel
+
+Typography:
+- Inter / SF Pro / Plus Jakarta Sans
+- Semi-bold + medium text weights
+- Large titles, well-spaced sections
+
+================================================================================
+📱 PAGES TO BUILD (MUST MATCH REFERENCE SCREENS EXACTLY)
+================================================================================
+
+1️⃣ **HOME PAGE**
+- Dark futuristic hero section
+- Title: “DietRx Guard – AI-Powered Indian Food–Medicine Interaction Checker”
+- Neon green CTA button
+- Futuristic AI + Indian food image (use placeholder)
+- Soft particle background animation
+
+2️⃣ **DISH INTERACTION ANALYZER PAGE**
+- Dark theme
+- Input field for dish name
+- Auto-detected ingredient pill-chips (paneer, spinach, etc.)
+- Neon green “Analyze Interaction” button
+- Right-side card showing user + medications list
+- Bottom-right floating assistant popup with interaction warning
+
+3️⃣ **MENU UPLOAD & OCR PAGE**
+- Large drag-and-drop upload box with neon green glow
+- “Upload Menu / Food Photo” button
+- Preview section for uploaded menu image
+- Auto-Detected Dish Names list in rounded cards
+- Sidebar consistent with other pages
+
+4️⃣ **INTERACTION ANALYSIS RESULTS PAGE**
+- Circular percentage ring showing total interaction risk
+- Severity badge: Low / Moderate / High
+- 3D ingredient molecule visualizer card
+- Interaction Highlights section (High Sodium, Turmeric Interaction, Dairy Effect)
+- Severity scale bar (green → yellow → red)
+- Ingredient Breakdown table
+- AI-Generated Safe Alternatives (Moong Dal, Vegetable Pulao)
+- Doctor Report Generation button
+
+5️⃣ **7-DAY MEAL PLANNER PAGE**
+- Daily meal columns (Breakfast, Lunch, Dinner, Snacks)
+- Meal cards with icons + medicine timing note
+- Neon green "Download PDF" button
+- Bottom informational popup (“Turmeric interaction detected…”)
+
+6️⃣ **DOCTOR DASHBOARD**
+- Light theme only
+- Patient list table (Name, ID, Last Scan, Risk Status, Actions)
+- Timeline of risk reports
+- Viewer for past dish scans
+- Notes panel
+- Export Report button
+
+================================================================================
+🧠 FUNCTIONAL REQUIREMENTS (AI + OCR + BACKEND)
+================================================================================
+
+AI/ML:
+- GPT-4/5 for ingredient extraction, dish breakdown, interaction reasoning
+- spaCy/NLTK for NLP ingredient classification
+- Custom rule engine to score interaction levels (Low/Moderate/High)
+- Indian Food Knowledge Graph mapping ingredients → compounds → risks
+
+OCR:
+- Tesseract OCR to extract text from menu images
+- Return list of dish candidates
+
+Food–Drug Interaction Engine:
+- Compute interaction risk score
+- Label risk causes (e.g., “High Fat”, “Vitamin K”, “Dairy”, “Citrus”)
+- Suggest alternatives based on similarity
+
+Meal Planner:
+- Generates a 7-day plan based on:
+    • medication timing
+    • dietary restrictions
+    • patient preferences
+    • risk reduction logic
+
+Doctor Tools:
+- Patient list table
+- Past scans viewer
+- Downloadable reports (PDF generation)
+
+================================================================================
+⚙️ FULL-STACK TECHNOLOGY STACK (MANDATORY)
+================================================================================
+Frontend:
+- React.js (Vite)
+- Tailwind CSS
+- Material UI for cards, tables, modals
+- Framer Motion
+- Lottie animations
+- Recharts for doctor dashboard analytics
+- PWA support  
+- Axios for API calls
+
+Backend:
+- FastAPI (Python)
+- Tesseract OCR
+- spaCy / NLTK
+- PostgreSQL with SQLAlchemy ORM
+- Redis cache for fast queries
+- Uvicorn server
+- Custom Python rule engine for interaction scoring
+- PDF generation (report for doctor)
+
+AI Layer:
+- OpenAI API (GPT-4 or GPT-5)
+- Ingredient parser
+- Risk scoring model
+- Dish-name normalization model
+
+Deployment:
+- Vercel → frontend
+- Railway / Render → backend
+- GitHub Actions → CI/CD pipeline
+
+================================================================================
+📌 WORKFLOWS TO IMPLEMENT
+================================================================================
+
+User Workflow:
+1. User enters a dish name OR uploads menu photo
+2. OCR extracts dish names
+3. Ingredients parsed by AI
+4. Interaction engine assigns risk levels
+5. System shows safe alternative dishes
+6. User can generate a 7-day AI meal plan
+7. Optional: send data to doctor dashboard
+
+Doctor Workflow:
+1. Doctor logs in
+2. Sees patient risk history
+3. Views past dish scans + interactions
+4. Downloads clinical report
+
+================================================================================
+📦 FINAL OUTPUT EXPECTATIONS
+================================================================================
+Generate:
+✔ Full project folder structure  
+✔ All frontend pages  
+✔ All components (cards, sidebars, tables, popups, buttons, skeletons)  
+✔ All backend routes + models + database schemas  
+✔ OCR + AI integration code  
+✔ Sample data for Indian dishes + medicines  
+✔ Tailwind + Material UI theme configuration  
+✔ Framer Motion animations  
+✔ Dark/Light theme logic  
+✔ COMPLETE runnable application code  
+
+The final build must visually match ALL 6 provided UI screenshots and behave exactly as described above.
